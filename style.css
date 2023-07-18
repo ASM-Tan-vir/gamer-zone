@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Work+Sans:wght@400;600;700;800&display=swap');
+/* Box sizing rules */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.text-style{
+    color: rgba(255, 66, 165, 1);
+}
+
+header{
+    max-width: 425px;
+    margin: 0 auto;
+    /* background-color: brown; */
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 auto;
+
+}
+.nav-logo{
+    display: flex;
+    gap: 0.5rem;
+    margin: 2rem auto 1rem auto;
+    align-items: center;
+}
+.logo-img{
+    width: 3rem;
+    margin-left: 2rem;
+}
+
+.logo-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(60, 53, 79, 1);
+
+} 
+
+.btn-nav{
+    padding: 0.5rem;
+    border-radius: 5%;
+    border: 0;
+    background-color: rgba(11, 2, 35, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+.banner-text{
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/Group\ 14.png);
+    background-size: 100%;
+}
+
+.banner-text h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(11, 2, 35, 1);
+}
+.banner-text h1{
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(rgba(249, 72, 178, 1), rgba(135, 88, 241, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-text p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(83, 76, 100, 1);
+    margin: 0.5rem auto;
+    padding-left: 25%;
+    text-align: start;
+}
+.banner-btn{
+    margin: 1rem auto;
+}
+.btn1{
+    padding: 0.2rem 0.5rem ;
+    border-radius: 20%;
+    margin-right: 0.25rem;
+    border: 0;
+    color: #ffff;
+    background-color: rgba(255, 66, 165, 1);
+}
+.btn2{
+    padding: 0.2rem 0.5rem ;
+    border-radius: 20%;
+    margin-left: 0.25rem;
+    border: 0;
+    color: #ffff;
+    background-color: rgba(78, 197, 247, 1);
+}
+
+@media only screen and (min-width: 768px) {
+    header{
+        max-width: 678px;
+        margin: 0 auto;
+        /* background-color: brown; */
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.3ram auto;
+    }
+    nav ul{
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .banner-text p{
+  
+        padding-left: 35%;
+
+    }
+}
+@media only screen and (min-width: 1024px) {
+    header{
+        max-width:100%;
+        height: 100%;
+        /* background-color: brown; */
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.3ram auto;
+    }
+    .banner-container{
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-image: linear-gradient(to left, rgba(126, 72, 227, 0.05), rgba(241, 68, 174, 0.05));
+    }
+    .banner-img{
+        height: 100%;
+        width: 100%;
+    }
+    .banner-text{
+        height: 100%;
+        width: 100%;
+        padding-top: 15%;
+        
+    }
+}
