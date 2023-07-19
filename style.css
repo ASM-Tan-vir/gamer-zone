@@ -230,7 +230,14 @@ nav ul li a{
 }
 
 .gaming-video{
-    margin: 0 auto;
+    margin: 1.5rem auto;
+
+}
+.gaming-video h3 {
+    text-align: center;
+}
+.gaming-video p {
+    text-align: center;
 }
 .videos{
     display: grid;
