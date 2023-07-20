@@ -272,17 +272,18 @@ main{
 }
 @media only screen and (min-width: 1024px) {
     .gaming-video{
+        max-width: 100%;
         margin: 0 auto;
         padding: 0 auto;
     }
     .videos{
         grid-template-columns: repeat(4 , 1fr);
         vertical-align: auto;
-        margin: 0 3rem;
+        margin: 0 auto;
     }
     .videos img{
         height: 15rem;
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
     }
 }
