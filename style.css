@@ -407,7 +407,7 @@ main{
 }
 @media only screen and (min-width: 1024px){
     .games-btn{
-        max-width: 80%;
+        max-width: 75%;
         margin-top: 15rem;
         align-items: center;
         justify-items: center;
